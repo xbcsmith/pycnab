@@ -2,7 +2,7 @@ import json
 import tempfile
 from typing import Union
 
-from cnab.types import Bundle, Action
+from cnab.types import Action, Bundle
 from cnab.util import extract_docker_images
 
 

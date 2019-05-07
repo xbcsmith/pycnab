@@ -1,16 +1,17 @@
 import json
 
+import pytest  # type: ignore
+
 from cnab import (
+    Action,
     Bundle,
     Credential,
-    InvocationImage,
-    Action,
-    Parameter,
-    Metadata,
-    Maintainer,
     Destination,
+    InvocationImage,
+    Maintainer,
+    Metadata,
+    Parameter,
 )
-import pytest  # type: ignore
 
 
 class TestMinimalParameters(object):

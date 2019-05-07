@@ -15,7 +15,7 @@ class TestHelloWorld(HelloWorld):
         assert action in app.actions
 
     def test_credentials_empty(self, app):
-        assert app.credentials == None
+        assert app.credentials is None
 
     def test_port_parameter_present(self, app):
         assert "port" in app.parameters

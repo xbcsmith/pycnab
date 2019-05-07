@@ -1,8 +1,7 @@
-import canonicaljson  # type: ignore
-
 from dataclasses import dataclass, field
-from typing import Optional, Any, List, Union, Dict, TypeVar, Callable, Type, cast
+from typing import Any, Callable, Dict, List, Optional, Type, TypeVar, Union, cast
 
+import canonicaljson  # type: ignore
 
 T = TypeVar("T")
 
@@ -14,7 +13,7 @@ def from_bool(x: Any) -> bool:
 
 
 def from_none(x: Any) -> Any:
-    if not x is None:
+    if x is not None:
         raise Exception(f"{x} not None")
     return x
 
@@ -23,7 +22,7 @@ def from_union(fs, x):
     for f in fs:
         try:
             return f(x)
-        except:
+        except Exception:
             pass
     assert False
 

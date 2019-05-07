@@ -38,7 +38,7 @@ bundle = Bundle.from_dict(data)
 This could for example be used for validation purposes, or for building user interfaces for `bundle.json` files.
 
 
-## Describing `bundle.json` in Python 
+## Describing `bundle.json` in Python
 
 You can also describe the `bundle.json` file in Python. This will correctly validate the
 structure based on the current specification and would allow for building a custom DSL or other

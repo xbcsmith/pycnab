@@ -1,15 +1,13 @@
-from cnab.types import (
-    Action,
-    Credential,
-    ImagePlatform,
-    Ref,
-    Image,
-    InvocationImage,
-    Maintainer,
-    Destination,
-    Metadata,
-    Parameter,
-    Bundle,
-)
-from cnab.cnab import CNAB
-from cnab.invocation_image import CNABDirectory
+from cnab.cnab import CNAB  # flake8: noqa
+from cnab.invocation_image import CNABDirectory  # flake8: noqa
+from cnab.types import Action  # flake8: noqa
+from cnab.types import Bundle  # flake8: noqa
+from cnab.types import Credential  # flake8: noqa
+from cnab.types import Destination  # flake8: noqa
+from cnab.types import Image  # flake8: noqa
+from cnab.types import ImagePlatform  # flake8: noqa
+from cnab.types import InvocationImage  # flake8: noqa
+from cnab.types import Maintainer  # flake8: noqa
+from cnab.types import Metadata  # flake8: noqa
+from cnab.types import Parameter  # flake8: noqa
+from cnab.types import Ref  # flake8: noqa
